@@ -2,6 +2,8 @@
 
 Este é um projeto de aprendizado para a integração do JPA e FlyWay com o Spring Boot.
 
+![FlyWaySpring.png](FlyWaySpring.png)
+
 ## Execução
 
 Primeiro é necessário construir um Contêiner com o Docker para o MySQL:
