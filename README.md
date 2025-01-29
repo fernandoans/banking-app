@@ -34,7 +34,19 @@ Nas próximas vezes, iniciar com:
 $ docker start meu-mysql
 ```
 
-E criar o banco de dados:
+Com o contêiner ativo, criar o banco de dados através dos seguintes passos:
+
+1. Entrar no contêiner:
 ```
-create database banking_app;
+$ docker exec -it meu-mysql bash
+```
+2. Acessar o mysql:
+```
+bash-4.4# mysql -uroot -p
+```
+3. Ao digitar a senha root, criar o banco de dados e sair do contêiner:
+```
+mysql> create database banking_app;
+mysql> exit
+bash-4.4# exit
 ```
