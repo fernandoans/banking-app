@@ -1,0 +1,17 @@
+meta {
+  name: Withdraw Account
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/api/accounts/1/withdraw
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "amount": 10541.0
+  }
+}

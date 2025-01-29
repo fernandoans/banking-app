@@ -1,0 +1,18 @@
+meta {
+  name: Create Account
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/accounts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "accountHolderName": "Maria Claudia",
+    "balance": 50445.5
+  }
+}

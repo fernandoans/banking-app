@@ -1,0 +1,17 @@
+meta {
+  name: Deposit Account
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/api/accounts/1/deposit
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "amount": 100
+  }
+}
