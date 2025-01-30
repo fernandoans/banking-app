@@ -1,6 +1,22 @@
-# Demo do Spring Boot com JPA e FlyWay
+# Projeto BASE - Para Spring Boot com JPA e FlyWay
 
-Este é um projeto de aprendizado para a integração do JPA e FlyWay com o Spring Boot.
+Neste projeto foram utilizadas as seguintes tecnologias:
+- Spring Boot 3 para Java 17
+- Open Api 3.0
+- Flyway
+- Lombok
+- JPA
+- Banco MySQL (contêiner)
+
+Este é um projeto de aprendizado também pode ser utilizado como ponto de partida para outros projetos, ou mesmo a 
+criação, de micro serviços. Este projeto contém transações para uma tabela Conta (Account), e os seguintes contratos API
+foram disponibilizados:
+- Criação de uma conta;
+- Obter todas as contas;
+- Obter uma determinada conta;
+- Transação de crédito na conta;
+- Transação de débito na conta; e
+- Eliminação de uma determinada conta.
 
 ![FlyWaySpring.png](FlyWaySpring.png)
 
@@ -50,3 +66,11 @@ mysql> create database banking_app;
 mysql> exit
 bash-4.4# exit
 ```
+
+## Documentação
+
+A documentação é uma parte essencial da construção de APIs REST. Foi utilizada a SpringDoc, que simplifica a geração 
+e manutenção de documentos de API com base na especificação OpenAPI 3 para aplicativos Spring Boot 3.x. Ao ativar o
+projeto, a documentação pode ser acessada no endereço: http://localhost:8080/swagger-ui-custom.html.
+
+O contrato, em formato JSON, está exposto no endereço: http://localhost:8080/api-docs.
